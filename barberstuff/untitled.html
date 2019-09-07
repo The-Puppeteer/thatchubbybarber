@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>That Chubby Barber</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        	.bPic{
+        		content:url(IMG_40191.png);
+        		display: block;
+        		height: 45%;
+        		width: 45%;
+        		margin-left: auto;
+        		margin-right: auto;
+        		margin-top:-20px;
+			}
+			.bInfo{
+				text-align: center;
+				font-family: "Noto Seriff";
+/*				margin-top:-60px auto;*/
+
+			}
+            #head1{
+                font-size:2vw;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+
+
+
+        <div class="bPic"></div>
+        <div class="bInfo"><h1 id="head1">Phone (503)-569-6306</h1>
+                           
+
+        </div>
+    </body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html>
+<title>That Chubby Barber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .text{
+        font-family: "Noto Seriff";
+    }
+    .sBimage{
+            
+            width: 100px;
+            height: 100px;
+            margin-top: -100px;
+    }   
+    .bPic{
+                content:url(IMG_40191.png);
+                display: block;
+                height: 45%;
+                width: 45%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:-20px;
+            }
+</style>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <div class="text">
+    <a href="http://www.bridgesbarbershop.com/servicesbook-appts.html"><p>Bridges Barbershop</p><img src="bridges.jpg" height=90px width=90px></a>
+    <a href="https://www.instagram.com/that_chubby_barber/?hl=en"><p>Instagram</p><img src="insta.jpg" height=90px width=90px></a>
+    <a href="https://www.facebook.com/thatchubbybarber/" class=""><p>Facebook</p><img src="faebooklogo.png" height=90px width=90px ></a>
+
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <div class="bPic"></div>
+  </div>
+</div>
+     
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+          
+</body>
+</html>
